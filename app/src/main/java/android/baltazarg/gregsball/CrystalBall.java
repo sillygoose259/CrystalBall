@@ -1,16 +1,15 @@
 package android.baltazarg.gregsball;
 
 import android.app.Activity;
+import android.hardware.SensorManager;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.TextureView;
 import android.widget.TextView;
-
 
 public class CrystalBall extends Activity {
 
     private TextView answerText;
+
+    private SensorManager
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +17,6 @@ public class CrystalBall extends Activity {
         setContentView(R.layout.activity_crystal_ball);
 
         answerText = (TextView) findViewById(R.id.answerText);
-        answerText.setText("reply is hazy, try again tommorow");
+        answerText.setText(Predictions.get().getPrediction());
     }
 }

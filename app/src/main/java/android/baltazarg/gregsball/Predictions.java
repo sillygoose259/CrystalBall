@@ -6,7 +6,10 @@ public class Predictions {
     private String[] answers;
 
     private Predictions(){
-        answers = new String[]
+        answers = new String[]{
+                "Your wishes will come true"
+        };
+
 
     }
 
@@ -15,5 +18,6 @@ public class Predictions {
             predictions = new Predictions();
         }
             return predictions;
+
     }
 }
