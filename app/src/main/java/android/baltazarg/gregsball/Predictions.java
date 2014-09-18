@@ -7,7 +7,8 @@ public class Predictions {
 
     private Predictions(){
         answers = new String[]{
-                "Your wishes will come true"
+                "Your wishes will come true",
+                "Your wishes will NEVER come true"
         };
 
 
@@ -19,5 +20,8 @@ public class Predictions {
         }
             return predictions;
 
+    }
+    public String getPredictions() {
+        return answers[1];
     }
 }
