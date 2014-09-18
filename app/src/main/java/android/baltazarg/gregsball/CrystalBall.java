@@ -12,7 +12,8 @@ public class CrystalBall extends Activity {
 
     private TextView answerText;
 
-    private SensorManager
+    private SensorManager sensorManager;
+    private Sensor accelerometer;
     private float accleration;
     private float currentAcceleration;
     private float previousAcceleration;
@@ -37,5 +38,15 @@ public class CrystalBall extends Activity {
 
         answerText = (TextView) findViewById(R.id.answerText);
         answerText.setText(Predictions.get().getPrediction());
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
     }
 }
