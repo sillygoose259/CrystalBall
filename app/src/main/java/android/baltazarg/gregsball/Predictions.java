@@ -11,7 +11,7 @@ public class Predictions {
                 "Your wishes will come true",
                 "Your wishes will NEVER come true",
                 "Your Next",
-                "Die"7
+                "Die"
         };
 
 
